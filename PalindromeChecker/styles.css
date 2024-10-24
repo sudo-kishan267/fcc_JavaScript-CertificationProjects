@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0;
     overflow: hidden;
     padding :0;
@@ -23,7 +23,7 @@ body {
 .main-content {
     width: 100%;
     max-width: 400px;
-    margin: 25vh auto 0 auto;
+    margin: 20vh auto 0 auto;
     
     display: flex;
     flex-direction: column;
@@ -54,6 +54,18 @@ body {
     font-weight: bold;
     text-align: center;
     
+}
+.resultShow {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+span {
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 input {
