@@ -1,1 +1,1 @@
-console.log("kishan")
+console.log("Baki kal karenge bhai ajj thak gaye")
