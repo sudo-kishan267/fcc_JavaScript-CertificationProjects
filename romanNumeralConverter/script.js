@@ -21,35 +21,35 @@ const romanData = [
 
 // Iterative approach 
 
-// const solve = (val) => {
-//   let result = "";
+const solve = (val) => {
+  let result = "";
   
-//   for (let i = 0; i < romanData.length; i++) {
-//     while (val >= romanData[i].value) {
-//       result += romanData[i].symbol;
-//       val -= romanData[i].value;
-//     }
-//   }
-//   return result;
-// } 
+  for (let i = 0; i < romanData.length; i++) {
+    while (val >= romanData[i].value) {
+      result += romanData[i].symbol;
+      val -= romanData[i].value;
+    }
+  }
+  return result;
+} 
 
 
 // First i thought of the recursive approach 
 
-let result = "";
-let i = 0;
-const solve = (val)=> {
+// let result = "";
+// let i = 0;
+// const solve = (val)=> {
 
-        if (val === 0)
-            return;
-        else if (val >= romanData[i].value ){
-            result +=romanData[i].symbol;           
-            solve(val-romanData[i].value);           
-        } 
-        else{
-            solve(val,i++);
-        }   
-}
+//         if (val === 0)
+//             return;
+//         else if (val >= romanData[i].value ){
+//             result +=romanData[i].symbol;           
+//             solve(val-romanData[i].value);           
+//         } 
+//         else{
+//             solve(val,i++);
+//         }   
+// }
    
 
 
@@ -57,17 +57,17 @@ const solve = (val)=> {
 
 const convertToRoman = (val) => {   
     
-    // const result = solve(val);// Uncomment this line & comment below 3 lines
+    const result = solve(val);// Uncomment this line & comment below 3 lines
    // of code for iterative approach.
     
-    solve(val); //-->this one
+    // solve(val); //-->this one
        
     outputDiv.innerHTML =`
     <div class= "output-number">${result}</div>
     `;
    
-    result = "";//-->this one
-    i=0;//-->this one
+    // result = "";//-->this one
+    // i=0;//-->this one
    
    
 }
