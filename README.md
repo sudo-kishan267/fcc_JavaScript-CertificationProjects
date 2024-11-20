@@ -24,10 +24,10 @@ To explore or run these projects locally, follow the steps below:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/sudo-kishan267/fcc-certificationProjects.git
+   git clonehttps://github.com/sudo-kishan267/fcc_JavaScript-CertificationProjects.git
 2. Navigate to the specific project folder:
    ```bash
-   cd fcc-certificationProjects
+   cd fcc_JavaScript-CertificationProjects
 
 ## Purpose and Learning Goals
 
