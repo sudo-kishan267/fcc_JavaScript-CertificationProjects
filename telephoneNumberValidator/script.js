@@ -3,21 +3,20 @@ const checkBtn = document.getElementById("check-btn");
 const clearBtn = document.getElementById("clear-btn");
 const resultDiv = document.getElementById("results-div");
 
-
 const validateInput =()=> {
     const inputStr = userInput.value ;
     if(inputStr === "")
         alert("Please provide a phone number");
-    else
-       { console.log(inputStr);
+    else{
+        // console.log(inputStr);
         validateNumber(inputStr);
         userInput.value = "";
-       }
+    }
 }
 
 const validateNumber = (inputStr) => {
-    console.log("validating");
-    const test = "(555)5(55?)-5555"
+    // console.log("validating");
+    // const test = "(555)5(55?)-5555"
     const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$/
     const result = regex.test(inputStr);
     //   console.log(result);
@@ -30,12 +29,8 @@ const validateNumber = (inputStr) => {
         resultDiv.innerHTML += `<div class ="output-div invalid">
         Invalid US number: ${inputStr}
         </div>`;
-    }
-       
+    }       
 };
-
-
-
 
 const resetOutputDiv = ()=> {
     resultDiv.innerHTML = "";
@@ -50,4 +45,4 @@ userInput.addEventListener("keydown", (event) => {
     }
   });
 
-  clearBtn.addEventListener("click",resetOutputDiv);
+clearBtn.addEventListener("click",resetOutputDiv);
