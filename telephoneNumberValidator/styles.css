@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+    margin: 0;
+    overflow: hidden;
+    padding :0;
+}
+:root {
+    --grey: #5E5E5E;
+    --light-grey: #BBBBBB;
+    --beige: #FFF0DB;
+    --text-color: #FAF7F0;
+    --danger-color: #850000;
+    --danger-background: #ffadad;
+}
+html {
+    width: 100%;
+    height: 100vh;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey)
+}
+.main-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 5vh auto 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+    margin-bottom: 20px;
+}
+.hero {
+    font-size: 2.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    text-align: center;
+}
+.phone-body{
+    width : 60%;
+    height: 450px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 7px 10px 7px;
+   
+}
+.phone-screen {
+    background-color: var(--text-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.punch-hole{
+    background-color: black;
+    width: 25%;
+    height: 12px;
+    margin-top: 10px;
+    border-radius: 30px;
+    
+}
+label{
+    
+    padding: 20px ;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#input {
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+    
+}
+
+.output {
+    
+}
+
+.button-div{
+    width: 100%;
+    display: flex;
+   justify-content: space-around;
+   margin-top: auto;
+   margin-bottom: 15px;
+   padding : 0 25;
+
+}
+.button{
+    width: 45%;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, var(--light-grey), var(--text-color));
+
+
+
+}
